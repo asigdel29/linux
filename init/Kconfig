@@ -502,6 +502,7 @@ source "kernel/irq/Kconfig"
 source "kernel/time/Kconfig"
 source "kernel/bpf/Kconfig"
 source "kernel/Kconfig.preempt"
+source "kernel/ai/Kconfig"
 
 menu "CPU/Task time and stats accounting"
 

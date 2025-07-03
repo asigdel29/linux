@@ -123,6 +123,7 @@ obj-$(CONFIG_F2FS_FS)		+= f2fs/
 obj-$(CONFIG_BCACHEFS_FS)	+= bcachefs/
 obj-$(CONFIG_CEPH_FS)		+= ceph/
 obj-$(CONFIG_PSTORE)		+= pstore/
+obj-$(CONFIG_MODELFS)		+= modelfs/
 obj-$(CONFIG_EFIVAR_FS)		+= efivarfs/
 obj-$(CONFIG_EROFS_FS)		+= erofs/
 obj-$(CONFIG_VBOXSF_FS)		+= vboxsf/
