@@ -1,0 +1,4 @@
+config MODELFS
+    bool "Model filesystem"
+    help
+      Pseudo filesystem for signed AI model storage.

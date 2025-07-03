@@ -1,0 +1,4 @@
+config AI_CORE
+    bool "AINUX AI core"
+    help
+      Basic AI model management support.
