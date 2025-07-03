@@ -20,6 +20,8 @@ struct ai_model {
 
 struct ai_model *ai_model_lookup(const char *name);
 
+};
+
 int ai_model_load(const char *path);
 int ai_model_infer(void *input, void *output);
 int ai_model_unload(const char *name);

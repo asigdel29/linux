@@ -17,6 +17,8 @@ help:
 	@echo '  firewire               - the userspace part of nosy, an IEEE-1394 traffic sniffer'
 	@echo '  firmware               - Firmware tools'
 	@echo '  ainux                  - AINUX AI user tools'
+  @echo '  firmware               - Firmware tools'
+  @echo '  ainux                  - AINUX AI user tools'
 	@echo '  freefall               - laptop accelerometer program for disk protection'
 	@echo '  gpio                   - GPIO tools'
 	@echo '  hv                     - tools used when in Hyper-V clients'
