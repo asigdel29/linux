@@ -15,8 +15,10 @@ help:
 	@echo '  cpupower               - a tool for all things x86 CPU power'
 	@echo '  debugging              - tools for debugging'
 	@echo '  firewire               - the userspace part of nosy, an IEEE-1394 traffic sniffer'
-@echo '  firmware               - Firmware tools'
-@echo '  ainux                  - AINUX AI user tools'
+	@echo '  firmware               - Firmware tools'
+	@echo '  ainux                  - AINUX AI user tools'
+  @echo '  firmware               - Firmware tools'
+  @echo '  ainux                  - AINUX AI user tools'
 	@echo '  freefall               - laptop accelerometer program for disk protection'
 	@echo '  gpio                   - GPIO tools'
 	@echo '  hv                     - tools used when in Hyper-V clients'
@@ -184,7 +186,7 @@ cpupower_clean:
 counter_clean hv_clean firewire_clean bootconfig_clean spi_clean usb_clean virtio_clean mm_clean wmi_clean bpf_clean iio_clean gpio_clean objtool_clean leds_clean firmware_clean debugging_clean tracing_clean ainux_clean:
 	$(call descend,$(@:_clean=),clean)
 
-	ainux_clean:
+ainux_clean:
 	$(call descend,ainux,clean)
 
 libapi_clean:
