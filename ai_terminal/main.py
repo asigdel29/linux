@@ -20,6 +20,15 @@ logging.basicConfig(level=logging.INFO)
 TERMINAL_HISTORY = []
 
 
+def show_context():
+    """Display the recorded terminal history as a context screen."""
+    os.system('clear')
+    print("--- Terminal Context ---")
+    for entry in TERMINAL_HISTORY:
+        print(entry)
+    input("Press Enter to continue...")
+
+
 def listen() -> Optional[str]:
     """Capture voice input using the default microphone."""
     if sr is None:
@@ -98,6 +107,8 @@ def main():
                 to_addr = parts[2]
                 subject = ' '.join(parts[3:])
                 send_email(to_addr, subject, 'Sent from AI terminal')
+        elif 'context screen' in command or command == 'show context':
+            show_context()
         elif 'what is this error' in command:
             answer = ask_openai(command)
             print(answer)

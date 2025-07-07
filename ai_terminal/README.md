@@ -12,6 +12,7 @@ Features include:
 - Opening a web browser
 - Sending basic email via the local `sendmail`
 - Asking questions about recent terminal errors using OpenAI
+- Viewing the full terminal context with the `show context` command
 
 Set `OPENAI_API_KEY` in your environment for OpenAI integration.
 
